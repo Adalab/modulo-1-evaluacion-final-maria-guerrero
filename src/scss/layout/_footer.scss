@@ -13,22 +13,30 @@
       text-transform: uppercase;
       padding-bottom: 15px;
 
-      & .menuItem {
-        color: $whiteColor;
+      & .listStyle {
         list-style-type: none;
-        text-decoration: none;        
       }
+
+        & .menuItem {
+          color: white;
+          list-style-type: none;
+          text-decoration: none;        
+        }
     }
     & .linksSocial {
       text-transform: uppercase;
       padding-top: 15px;
       padding-bottom: 15px;
 
-      & .socialItem {
-        color: $whiteColor;
+      & .listStyle2 {
         list-style-type: none;
-        text-decoration: none;
       }
+
+        & .socialItem {
+          color: $whiteColor;
+          list-style-type: none;
+          text-decoration: none;
+        }
     }
 
     .copySmall {
