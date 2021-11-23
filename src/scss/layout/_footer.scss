@@ -1,6 +1,5 @@
 .footer {
   height: 465px;
-  color: $whiteColor;
   padding-top: 60px;
   background: $deepBlueColor;
   font-family: $robotoRegular;
@@ -15,7 +14,9 @@
       padding-bottom: 15px;
 
       & .menuItem {
+        color: $whiteColor;
         list-style-type: none;
+        text-decoration: none;        
       }
     }
     & .linksSocial {
@@ -24,15 +25,27 @@
       padding-bottom: 15px;
 
       & .socialItem {
+        color: $whiteColor;
         list-style-type: none;
+        text-decoration: none;
       }
     }
 
     .copySmall {
+      color: $whiteColor;
       padding-top: 15px;
       font-size: 14px;
     }
     .weLoveComponents {
+      color: $whiteColor;
       font-size: 14px;
+    }
+    .whiteCircle2 {
+      position: absolute;
+      background-color: $whiteColor;
+      padding: 10px 12px 10px 12px;
+      border-radius: 100%;
+      transform: translate(-50%, -185%);
+      box-shadow: 0px 2px 10px rgba(0,0,0,.2);
     }
 }
