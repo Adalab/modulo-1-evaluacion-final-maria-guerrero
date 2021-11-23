@@ -16,6 +16,10 @@
       padding-top: 45px;
       height: 240px;
     }
+    @media (min-width: 1200px) {
+      padding-left: 330px;
+      padding-right: 330px;
+    }
 
     & .linksMenu {
       text-transform: uppercase;
@@ -42,6 +46,7 @@
       padding-bottom: 15px;
       @media (min-width: 768px){
         margin-right: 40px;
+        padding-top: 0;
       }
 
       & .listStyle2 {
@@ -74,10 +79,13 @@
       background-color: $whiteColor;
       padding: 10px 12px 10px 12px;
       border-radius: 100%;
-      transform: translate(-50%, -185%);
+      transform: translate(-20px, -83px);
       box-shadow: 0px 2px 10px rgba(0,0,0,.2);
       @media (min-width: 768px) {
-        transform: translate(-820%, -150%);
+        transform: translate(-370px, -67px);
+      }
+      @media (min-width: 1200px) {
+        transform: translate(-280px, -67px);
       }
     }
 }

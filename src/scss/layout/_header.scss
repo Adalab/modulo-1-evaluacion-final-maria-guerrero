@@ -20,6 +20,10 @@
         padding-bottom: 20px;
         font-size: 80px;
       }
+      @media (min-width: 1200px) {
+        font-size: 100px;
+        padding: 384px 275px 0 275px;
+      }
   }
   .subtitle {
     padding: 5px 15px 45px 15px;
@@ -32,16 +36,16 @@
         font-size: 24px;
         padding-bottom: 120px;
     }
+      @media (min-width: 1200px) {
+        padding-bottom: 0;
+      }
   }
   .iconoMenu {
     background-color: $mediumBlueColor;
     padding: 15px;
     position: fixed;
     top: 0;
-    transform: translateX(-160px);
-      @media (min-width: 768px) {
-        transform: translateX(-384px);
-    }
+    left: 0;
   }
   .whiteCircle {
     background-color: $whiteColor;
@@ -50,4 +54,7 @@
       @media (min-width: 768px) {
         transform: translateY(-85px);
     }
+      @media (min-width: 1200px) {
+        transform: translateY(30px);
+      }
   }
