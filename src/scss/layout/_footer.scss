@@ -1,8 +1,38 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  height: 465px;
+  color: $whiteColor;
+  padding-top: 60px;
+  background: $deepBlueColor;
+  font-family: $robotoRegular;
+  text-align: center;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+    & .linksMenu {
+      text-transform: uppercase;
+      padding-bottom: 15px;
+
+      & .menuItem {
+        list-style-type: none;
+      }
+    }
+    & .linksSocial {
+      text-transform: uppercase;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      & .socialItem {
+        list-style-type: none;
+      }
+    }
+
+    .copySmall {
+      padding-top: 15px;
+      font-size: 14px;
+    }
+    .weLoveComponents {
+      font-size: 14px;
+    }
 }

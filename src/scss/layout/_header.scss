@@ -3,6 +3,8 @@
   background: url("../images/cover.jpg");
   background-position-x: center;
   display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -21,6 +23,7 @@
     font-family: $robotoRegular;
     color: $whiteColor;
     text-align: center;
+    font-weight: lighter;
   }
   .iconoMenu {
     background-color: $mediumBlueColor;

@@ -1,0 +1,95 @@
+.main {
+
+
+    // Flex section
+    .sectionFlex {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 376px;
+        background-color: $whiteColor;
+        background-color: $whiteColor;
+
+        .small {
+            color: $lightBlueColor;
+            font-family: $robotoRegular;
+            font-size: 14px;
+            text-transform: capitalize;
+        }
+    
+        .lookingThrough {
+            font-family: $robotoBold;
+            text-transform: capitalize;
+            font-size: 24px;
+        }
+        .paragraph {
+            font-size: 17px;
+            font-family: $robotoRegular;
+            color: #4a4a4a;
+            line-height: 30px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .buttonGo {
+            padding: 7px 24px 9px;
+            color: $orangeColor;
+            width: 77px;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 50px;
+            border: $orangeColor 3px solid;
+            font-family: $robotoBold;
+
+            &:hover{
+                background-color: $orangeColor;
+                color: white;
+                transition: color ease 0.5s;
+            }
+        }
+        
+    }
+
+    // Grid section
+    .grid-container {
+        background-color: #eff9ff;
+        height: 624px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        & .item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-right: 70px;
+            padding-left: 70px;            
+        }
+    }
+
+    .titleReasons {
+        text-align: center;
+        transform: translateY(40px);
+        font-family: $robotoBold;
+        text-transform: capitalize;
+        font-size: 24px;
+        &:hover {
+            color: $lightBlueColor;
+            transition: color ease 0.2s;
+        }
+    }
+    .reasonsBold {
+        font-family: $robotoBold;
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .reasonsRegular {
+        font-family: $robotoRegular;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
