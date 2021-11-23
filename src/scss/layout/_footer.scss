@@ -8,10 +8,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+    @media (min-width: 768px){
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: flex-start;
+      text-align: left;
+      padding-top: 45px;
+      height: 240px;
+    }
 
     & .linksMenu {
       text-transform: uppercase;
       padding-bottom: 15px;
+        @media (min-width: 768px){
+          order: 2;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
 
       & .listStyle {
         list-style-type: none;
@@ -27,6 +40,9 @@
       text-transform: uppercase;
       padding-top: 15px;
       padding-bottom: 15px;
+      @media (min-width: 768px){
+        margin-right: 40px;
+      }
 
       & .listStyle2 {
         list-style-type: none;
@@ -39,10 +55,15 @@
         }
     }
 
-    .copySmall {
+    .flexFinal {
       color: $whiteColor;
       padding-top: 15px;
       font-size: 14px;
+      @media (min-width: 768px){
+        order: 3;
+        padding-left: 30px;
+        padding-top: 0;
+      }
     }
     .weLoveComponents {
       color: $whiteColor;
@@ -55,5 +76,8 @@
       border-radius: 100%;
       transform: translate(-50%, -185%);
       box-shadow: 0px 2px 10px rgba(0,0,0,.2);
+      @media (min-width: 768px) {
+        transform: translate(-820%, -150%);
+      }
     }
 }

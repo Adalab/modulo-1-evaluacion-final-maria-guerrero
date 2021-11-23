@@ -16,6 +16,10 @@
     font-size: 42px;
     text-transform: uppercase;
     font-family: $robotoBold;
+      @media (min-width: 768px) {
+        padding-bottom: 20px;
+        font-size: 80px;
+      }
   }
   .subtitle {
     padding: 5px 15px 45px 15px;
@@ -24,6 +28,10 @@
     color: $whiteColor;
     text-align: center;
     font-weight: lighter;
+      @media (min-width: 768px) {
+        font-size: 24px;
+        padding-bottom: 120px;
+    }
   }
   .iconoMenu {
     background-color: $mediumBlueColor;
@@ -31,9 +39,15 @@
     position: fixed;
     top: 0;
     transform: translateX(-160px);
+      @media (min-width: 768px) {
+        transform: translateX(-384px);
+    }
   }
   .whiteCircle {
     background-color: $whiteColor;
     padding: 16px 12px 16px 12px;
     border-radius: 100%;
+      @media (min-width: 768px) {
+        transform: translateY(-85px);
+    }
   }

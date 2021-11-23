@@ -11,6 +11,11 @@
         height: 376px;
         background-color: $whiteColor;
         background-color: $whiteColor;
+            @media (min-width: 768px) {
+                height: 330px;
+                padding-left: 39px;
+                padding-right: 39px;
+            }
 
         .small {
             color: $lightBlueColor;
@@ -23,6 +28,9 @@
             font-family: $robotoBold;
             text-transform: capitalize;
             font-size: 24px;
+                @media (min-width: 768px) {
+                    font-size: 26px;
+                }
         }
         .paragraph {
             font-size: 17px;
@@ -31,16 +39,26 @@
             line-height: 30px;
             padding-top: 15px;
             padding-bottom: 15px;
+                @media (min-width: 768px) {
+                    font-size: 20px;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                }
         }
         .buttonGo {
             padding: 7px 24px 9px;
             color: $orangeColor;
             width: 77px;
             font-size: 20px;
+            text-align: center;
             background-color: white;
             border-radius: 50px;
             border: $orangeColor 3px solid;
             font-family: $robotoBold;
+                @media (min-width: 768px) {
+                    width: 95px;
+                    text-align: center;
+                }
 
             &:hover{
                 background-color: $orangeColor;
@@ -58,6 +76,11 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
+            @media (min-width: 768px){
+                height: 397px;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
 
         & .item{
             display: flex;
@@ -74,6 +97,11 @@
         font-family: $robotoBold;
         text-transform: capitalize;
         font-size: 24px;
+            @media (min-width: 768px){
+                font-size: 26px;
+                transform: translateY(40px);
+                grid-column: 1 / 4;
+            }
         &:hover {
             color: $lightBlueColor;
             transition: color ease 0.2s;
@@ -86,6 +114,11 @@
         line-height: 30px;
         padding-right: 70px;
         padding-left: 70px;
+            @media (min-width: 768px){
+                font-size: 24px;
+                text-align: center;
+                padding: 0;
+            }   
     }
     .reasonsRegular {
         font-family: $robotoRegular;
@@ -93,6 +126,11 @@
         line-height: 30px;
         padding-right: 70px;
         padding-left: 70px;
+            @media (min-width: 768px){
+                font-size: 20px;
+                padding-right: 13px;
+                padding-left: 13px
+            }  
     }
     .linkMore {
         font-size: 20px;
@@ -104,11 +142,9 @@
         font-weight: medium;
         color: $whiteColor;
         transform: translateY(-40%);
-
-            
-        
-        
-        
+            @media (min-width: 768px){
+                transform: translateX(255px);
+            }
         &:hover{
                 background-color: $orangeColor;
                 color: white;
