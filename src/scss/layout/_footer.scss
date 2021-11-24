@@ -1,33 +1,30 @@
 .footer {
-  height: 465px;
-  padding-top: 60px;
+  // height: 465px;
   background: $deepBlueColor;
   font-family: $robotoRegular;
   text-align: center;
   line-height: 30px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
     @media (min-width: 768px){
-      flex-direction: row-reverse;
       justify-content: space-around;
       align-items: flex-start;
       text-align: left;
-      padding-top: 45px;
-      height: 240px;
     }
     @media (min-width: 1200px) {
-      padding-left: 330px;
-      padding-right: 330px;
+      
     }
 
     & .linksMenu {
+      margin-top: 60px;
+      margin-bottom: 15px;
       text-transform: uppercase;
-      padding-bottom: 15px;
         @media (min-width: 768px){
+          margin-top: 45px;
+          margin-bottom: 45px;
           order: 2;
-          padding-left: 30px;
-          padding-right: 30px;
         }
 
       & .listStyle {
@@ -37,16 +34,16 @@
         & .menuItem {
           color: white;
           list-style-type: none;
-          text-decoration: none;        
+          text-decoration: none;
         }
     }
     & .linksSocial {
       text-transform: uppercase;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px;
       @media (min-width: 768px){
-        margin-right: 40px;
-        padding-top: 0;
+        margin-top: 45px;
+        order: 3;
       }
 
       & .listStyle2 {
@@ -62,30 +59,42 @@
 
     .flexFinal {
       color: $whiteColor;
-      padding-top: 15px;
+      margin-top: 15px;
       font-size: 14px;
       @media (min-width: 768px){
-        order: 3;
-        padding-left: 30px;
-        padding-top: 0;
+        order: 1;
+        margin-top: 45px;
       }
     }
     .weLoveComponents {
       color: $whiteColor;
       font-size: 14px;
+      margin-bottom: 45px;
     }
     .whiteCircle2 {
       position: absolute;
+      top: 0;
+      left: 50%;
       background-color: $whiteColor;
       padding: 10px 12px 10px 12px;
       border-radius: 100%;
-      transform: translate(-20px, -83px);
+      transform: translate(-50%, -50%);
       box-shadow: 0px 2px 10px rgba(0,0,0,.2);
-      @media (min-width: 768px) {
-        transform: translate(-370px, -67px);
+    }
+    .group2 {
+      display: flex;
+      flex-direction: column;
+        @media (min-width: 768px) {
+        justify-content: space-between;
+        width: 80%;
+        margin-left: 39px;
+        margin-right: 39px;
       }
-      @media (min-width: 1200px) {
-        transform: translate(-280px, -67px);
-      }
+        @media (min-width: 1200px) {
+          flex-direction: row;
+          margin-left: 370px;
+          margin-right: 370px;
+          width: 40%;
+        }
     }
 }

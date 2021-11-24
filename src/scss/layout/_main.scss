@@ -3,23 +3,22 @@
 
     // Flex section
     .sectionFlex {
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-top: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 376px;
         background-color: $whiteColor;
         background-color: $whiteColor;
             @media (min-width: 768px) {
-                height: 330px;
-                padding-left: 39px;
-                padding-right: 39px;
+                margin-left: 39px;
+                margin-right: 39px;
             }
             @media (min-width: 1200px) {
                 height: 360px;
-                padding-left: 275px;
-                padding-right: 275px;
+                margin-left: 275px;
+                margin-right: 275px;
             }
 
         .small {
@@ -45,16 +44,17 @@
             font-family: $robotoRegular;
             color: #4a4a4a;
             line-height: 30px;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            margin-top: 15px;
+            margin-bottom: 30px;
                 @media (min-width: 768px) {
                     font-size: 20px;
-                    padding-top: 30px;
-                    padding-bottom: 30px;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
                 }
         }
         .buttonGo {
             padding: 7px 24px 9px;
+            margin-bottom: 45px;
             color: $orangeColor;
             width: 77px;
             font-size: 20px;
@@ -64,6 +64,7 @@
             border: $orangeColor 3px solid;
             font-family: $robotoBold;
                 @media (min-width: 768px) {
+                    margin-bottom: 60px;
                     width: 95px;
                     text-align: center;
                 }
@@ -83,7 +84,6 @@
     // Grid section
     .grid-container {
         background-color: #eff9ff;
-        height: 624px;
         display: grid;
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: 1fr;
@@ -101,24 +101,29 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;            
+            text-align: center;
+            grid-column: 1 / 4;
+            @media (min-width: 768px){
+                grid-column: span 1;
+            }            
         }
     }
 
     .titleReasons {
         text-align: center;
-        transform: translateY(40px);
+        margin-top: 30px;
+        margin-bottom: 45px;
         font-family: $robotoBold;
         text-transform: capitalize;
         font-size: 24px;
             @media (min-width: 768px){
                 font-size: 26px;
-                transform: translateY(40px);
                 grid-column: 1 / 4;
             }
             @media (min-width: 1200px) {
                 font-size: 32px;
-                transform: translateY(60px);
+                margin-top: 60px;
+                margin-bottom: 45px;
             }
         &:hover {
             color: $lightBlueColor;
@@ -130,8 +135,8 @@
         text-align: center;
         font-size: 18px;
         line-height: 30px;
-        padding-right: 70px;
-        padding-left: 70px;
+        margin-right: 70px;
+        margin-left: 70px;
             @media (min-width: 768px){
                 font-size: 24px;
                 text-align: center;
@@ -142,15 +147,18 @@
         font-family: $robotoRegular;
         font-size: 18px;
         line-height: 30px;
-        padding-right: 70px;
-        padding-left: 70px;
+        margin-right: 70px;
+        margin-left: 70px;
+        margin-bottom: 45px;
             @media (min-width: 768px){
                 font-size: 20px;
-                padding-right: 13px;
-                padding-left: 13px
+                margin-bottom: 60px;
+                margin-right: 13px;
+                margin-left: 13px
             }
             @media (min-width: 1200px) {
                 width: 300px;
+                margin-top: 14px;
             }  
     }
     .linkMore {
@@ -160,21 +168,21 @@
         border-radius: 100px;
         background-color: $orangeColor;
         font-family: $robotoRegular;
+        text-align: center;
         font-weight: medium;
         color: $whiteColor;
-        transform: translateY(-40%);
-            @media (min-width: 768px){
-                transform: translateX(255px);
-            }
+        margin: auto;
             @media (min-width: 1200px) {
                 text-transform: capitalize;
-                width: 250px;
-                transform: translateX(400px);
             }
         &:hover{
                 background-color: $orangeColor;
                 color: white;
                 transition: color ease 0.5s;
             }
+    }
+    .titleMore {
+        grid-column: 1 / 4;
+        text-align: center;
     }
 }
