@@ -1,6 +1,6 @@
 .footer {
   // height: 465px;
-  background: $deepBlueColor;
+  background: $mediumBlueColor;
   font-family: $robotoRegular;
   text-align: center;
   line-height: 30px;
@@ -19,12 +19,12 @@
 
     & .linksMenu {
       margin-top: 60px;
-      margin-bottom: 15px;
+      margin-bottom: 22.5px;
       text-transform: uppercase;
+      order: 1;
         @media (min-width: 768px){
           margin-top: 45px;
           margin-bottom: 45px;
-          order: 2;
         }
 
       & .listStyle {
@@ -32,18 +32,18 @@
       }
 
         & .menuItem {
-          color: white;
+          color: black;
           list-style-type: none;
           text-decoration: none;
         }
     }
     & .linksSocial {
       text-transform: uppercase;
-      margin-top: 15px;
-      margin-bottom: 15px;
+      margin-top: 22.5px;
+      margin-bottom: 22.5px;
+      order: 2;
       @media (min-width: 768px){
-        margin-top: 45px;
-        order: 3;
+        margin-top: 45px;       
       }
 
       & .listStyle2 {
@@ -51,25 +51,26 @@
       }
 
         & .socialItem {
-          color: $whiteColor;
+          color: black;
           list-style-type: none;
           text-decoration: none;
         }
     }
 
     .flexFinal {
-      color: $whiteColor;
-      margin-top: 15px;
+      color: black;
+      margin-top: 22.5px;
       font-size: 14px;
+      order: 3;
       @media (min-width: 768px){
-        order: 1;
         margin-top: 45px;
       }
     }
     .weLoveComponents {
-      color: $whiteColor;
+      color: black;
       font-size: 14px;
       margin-bottom: 45px;
+      display: inline;
     }
     .whiteCircle2 {
       position: absolute;
@@ -96,5 +97,9 @@
           margin-right: 370px;
           width: 40%;
         }
+    }
+    .componentsColor {
+      display: inline;
+      color: $orangeColor;
     }
 }
